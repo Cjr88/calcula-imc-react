@@ -21,8 +21,10 @@ const Formulario = () => {
             setResult('De acordo com a tabela do IMC o seu peso se encontra acima do peso. Atenção redobrada na sua alimentação!');
         } else if (imc >= 30 && imc <= 34.99) {
             setResult('De acordo com a tabela do IMC o seu peso se encontra em um grau de Obesidade I. Tenha cuidado esse peso é muito prejudicial a saúde!');
-        } else {
+        } else if (imc >= 36.99 && imc <= 35.99){
             setResult('De acordo com a tabela do IMC o seu peso se encontra em um grau de Obesidade II. Procure a ajuda de um profissional!');
+        }else {
+            setResult('')
         }
 
     }

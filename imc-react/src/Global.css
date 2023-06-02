@@ -5,8 +5,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
-  max-width: 960px;
-  margin: 0 auto;
   margin-top: 10px;
   padding: 60px;
   background-color: var(--corPrincipal);
@@ -33,7 +31,6 @@
   border: none;
 }
 .resultado{
-
 text-align: center;
 font-size: large;
 font-weight: bold;
@@ -43,4 +40,9 @@ margin-top: 17px;
 :root{
   --corPrincipal:  rgb(16, 26, 16);
   --corSecundaria:  blanchedalmond;
+}
+@media (max-width:769px){
+  .container{
+    width: 100%;
+  }
 }
